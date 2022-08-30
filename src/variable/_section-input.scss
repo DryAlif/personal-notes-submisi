@@ -123,16 +123,12 @@
 
 	.form__btn {
 		font-weight: 600;
-		font-size: 1.2rem;
+		font-size: 2.4rem;
 		padding: 1.5rem 1.6rem;
 		margin: 10px 0;
-
 		width: 100%;
-		max-width: 42.5rem;
-
 		color: var(--white-color);
 		background: var(--dark-color);
-
 		border-radius: 0.5rem;
 		outline: none;
 		border: none;
@@ -142,5 +138,26 @@
 	.form__btn:active {
 		background: var(--black-color);
 		color: var(--light-gray-color);
+	}
+
+	.new-notes-label {
+		width: 100% !important;
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+
+		.note-input__title__char-limit {
+			font-size: 14px;
+			text-align: right;
+			color: var(--black-color);
+		}
+	}
+
+	.form__input--textarea {
+		@extend .form__input;
+		width: 100% !important;
+		height: 320px !important;
+		resize: none !important;
 	}
 }
