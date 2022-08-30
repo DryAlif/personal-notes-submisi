@@ -10,21 +10,6 @@ const App = () => {
 	const notes = getInitialData();
 	const [notesList, setNotesList] = useState(notes);
 	const [searchText, setSearchText] = useState('');
-	// const [textNotes, setTextNotes] = useState('');
-
-	// const setTextNotes =
-	// 	searchText.length === 0
-	// 		? notesList
-	// 		: notesList.filter((note) =>
-	// 				note.title.toLowerCase().includes(searchText)
-	// 		  );
-	// const setTextNotes = useEffect(() => {
-	// 	searchText.length === 0
-	// 		? notesList
-	// 		: notesList.filter((note) =>
-	// 				note.title.toLowerCase().includes(searchText)
-	// 		  );
-	// }, [notesList]);
 
 	const createNoteHandler = ({ noteTitle, noteBodyTextArea }) => {
 		const newNote = {
@@ -71,13 +56,6 @@ const App = () => {
 				<InputSection createNoteHandler={createNoteHandler} />
 				<SearchSection searchHandler={setSearchText} />
 				<NotelistSection
-					// notes={
-					// 	searchText.length === 0
-					// 		? notesList
-					// 		: notesList.filter((note) =>
-					// 				note.title.toLowerCase().includes(searchText)
-					// 		  )
-					// // }
 					notes={searchFilter()}
 					deleteNoteHandler={deleteNoteHandler}
 					ArchiveNoteHandler={ArchiveNoteHandler}
