@@ -41,6 +41,20 @@ const getInitialData = () => [
 		createdAt: '2022-04-14T04:27:34.572Z',
 		archived: false,
 	},
+	{
+		id: 7,
+		title: 'Apa Itu HTML',
+		body: 'HTML adalah singkatan dari Hypertext Markup Language, yaitu bahasa markup standar untuk membuat dan menyusun halaman dan aplikasi web..',
+		createdAt: '2022-05-14T04:27:34.572Z',
+		archived: true,
+	},
+	{
+		id: 8,
+		title: 'Apa Itu CSS',
+		body: 'CSS adalah singkatan dari cascading style sheets, yaitu bahasa yang digunakan untuk menentukan tampilan dan format halaman website. Dengan CSS, Anda bisa mengatur jenis font, warna tulisan, dan latar belakang halaman.',
+		createdAt: '2022-05-14T04:27:34.572Z',
+		archived: true,
+	},
 ];
 
 const showFormattedDate = (date) => {
