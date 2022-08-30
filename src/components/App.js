@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Header from './Header';
+import NoteHeader from './NoteHeader';
 import InputSection from './InputSection';
 import NotelistSection from './NotelistSection';
 import SearchSection from './SearchSection';
@@ -51,7 +51,7 @@ const App = () => {
 
 	return (
 		<>
-			<Header />
+			<NoteHeader />
 			<main>
 				<InputSection createNoteHandler={createNoteHandler} />
 				<SearchSection searchHandler={setSearchText} />

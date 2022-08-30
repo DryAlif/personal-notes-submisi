@@ -1,5 +1,5 @@
 import React from 'react';
-const Header = () => {
+const NoteHeader = () => {
 	return (
 		<header className='header-app'>
 			<h1 className='header-app__text'>Personal Notes APP</h1>
@@ -7,4 +7,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default NoteHeader;
