@@ -42,8 +42,9 @@ const App = () => {
 		if (searchText.length === 0) {
 			return notesList;
 		} else {
+			const lcSearchtext = searchText.toLowerCase();
 			const filtered = notesList.filter((note) =>
-				note.title.toLowerCase().includes(searchText)
+				note.title.toLowerCase().includes(lcSearchtext)
 			);
 			return filtered;
 		}
